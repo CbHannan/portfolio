@@ -1,21 +1,248 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{title}}!
-  </h1>
-  <img width="300" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<div class="loading">
+  <div class="customHeaderLarge">Loading</div>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<body>
+  <div class="box one" id="boxOne">
 
-<router-outlet></router-outlet>
+    <div class="vidWrap">
+      <video autoplay muted loop id="myVideo">
+        <source src="/assets/videos/bg.mp4" type="video/mp4">
+      </video>
+
+    </div>
+    <div>
+      <div class="jumbotron" id="jumbotron">
+
+        <div (click)="scrollToTop()" id="stickyName" class="display-4 noDisplay"><span class="bgPanel" id="name2">Cody</span> Hannan</div>
+        <div id="nameWrap">
+          <h1 id="name" class="mt-0">Cody Hannan</h1>
+          <div class="display-3" id="webDev"><span class=" text-white" id="fullstack">Full Stack</span> Web Developer</div>
+        </div>
+  <div class="container " id="infoCon">
+          <div class="personalInfo" id="personalInfo">
+            <div class="row">
+              <div class="col-md-3 headerCol" id="eCol">
+                <div class="container">
+                  <a id="education" class="display-4 menu" (click)="scrollToEducation()">Focus</a>
+                </div>
+                <div class="container">
+                  <i id="eIcon" class="fas fa-search reddish fa-2x fa-3x icon"></i>
+                </div>
+              </div>     
+              <div class="col-md-3 headerCol " id="tCol">
+                <div class="container">
+                  <a id="tech" class="display-4 menu" (click)="scrollToTech()">Technologies</a>
+                </div>
+                <div class="container">
+                  <i id="tIcon" class="fas fa-server reddish fa-2x fa-3x icon"></i>
+                </div>
+              </div>
+              <div class="col-md-3 headerCol" id="pCol">
+                <div class="container">
+                  <a id="projects" class="display-4 menu" (click)="scrollToProjects()">Projects</a>
+                </div>
+                <div class="container">
+                  <i id="pIcon" class="far fa-folder-open reddish fa-2x fa-3x icon"></i>
+                </div>
+              </div>
+              <div class="col-md-3 headerCol" id="cCol">
+                <div class="container">
+                  <a id="contactMe" class="display-4 text-white bgPanel menu" (click)="scrollToContact()">Contact</a>
+                </div>
+                <div class="container">
+                  <i id="cIcon" class="far fa-envelope reddish fa-2x fa-3x icon"></i>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container" id="typingContainer">
+        <div class="customHeaderLarge text-white showMe" id="introText">
+          What can I get started for you today?
+        </div>
+      </div>
+      </div>
+  </div>
+  <div class="box two" id="boxTwo">
+    <div class="infoWrap" id="infoWrap">     
+    </div>
+    <div id="routerWrap">
+      <div class="card" id="educationCard">
+        <div class="container">
+          
+          <div class="row info">
+            <div class="col-md-3">
+              <div class="customHeaderSmall langHeaderSmall">Speed</div>
+              <i class="fas fa-space-shuttle reddish fa-4x icon"></i>
+              <p class="lang"></p>
+              </div>
+            <div class="col-md-3">
+              <div class="customHeaderSmall langHeaderSmall">Responsive</div>
+              <i class="fas fa-expand reddish fa-4x icon"></i>
+              <p class="lang"></p>
+            </div>
+            <div class="col-md-3">
+              <div class="customHeaderSmall langHeaderSmall">Intuitive</div>
+              <i class="far fa-lightbulb reddish fa-4x icon"></i>
+              <p class="lang"></p>
+              </div>
+            <div class="col-md-3">
+              <div class="customHeaderSmall langHeaderSmall">Engaging</div>
+              <i class="fas fa-paint-brush reddish fa-4x icon"></i>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="customHeaderSmall aboutMe">
+                Hi. I’m Cody, a web developer from Denver, Colorado. Please take a look around!
+              </div>
+              </div>
+            <div class="col-md-6">
+              <p class="lang alignLeft">Websites don't have to be static, I love making pages come to life. I'm always searching for the meeting place of form and function; intuitive User Interface and User Design. In today's digital landscape, a page's ability to work on all different screen sizes is a must. My layouts will work on any device, big or small. Still, my primary focus is on speed and lightweight builds that are scalable and swift.</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+      <div class="card " id="techCard">
+        <div class="container">
+          <div  id="techHeader" class="row tech">
+            <div class="col-md-6">
+              <div id="techDescription" class="customHeaderSmall alignRight noTopMargin">
+                These are some of the<br /><span class="bgPanel">Technologies</span>  that I use
+              </div>
+            </div>
+            <div class="col-md-6 alignLeft ">
+              <p id="techDetails">If you have an application you are interested in developing, I’d love to work with you on it. I’m a full-stack developer which means I can bring your project from concept to completion. I work primarily with Express and Node.js on the back-end and Angular.js on the front-end but picking up new languages or frameworks isn’t a problem.</p>
+
+            </div>
+          </div>
+          <div class="row tech">
+            <div class="col-md-3">
+              <div class="customHeaderSmall langHeader">JavaScript</div>
+              <i class="fab fa-js reddish fa-4x"></i>
+              <div class="customHeaderSmall langHeader">Angular</div>
+              <i class="fab fa-angular reddish fa-4x "></i>
+            </div>
+            <div class="col-md-3">
+              <div class="customHeaderSmall langHeader">HTML</div>
+              <i class="fab fa-html5 reddish fa-4x "></i>
+              <div class="customHeaderSmall langHeader">CSS</div>
+              <i class="fab fa-css3 reddish fa-4x "></i>
+            </div>
+            <div class="col-md-3">
+              <div class="customHeaderSmall langHeader">Node.Js</div>
+              <i class="fab fa-node reddish fa-4x"></i>
+              <div class="customHeaderSmall langHeader">MySQL</div>
+              <i class="fas fa-database reddish fa-4x"></i>
+            </div>
+            <div class="col-md-3">
+              <div class="customHeaderSmall langHeader">Python</div>
+              <i class="fab fa-python reddish fa-4x"></i>
+
+              <div class="customHeaderSmall langHeader">Java</div>
+              <i class="fab fa-java reddish fa-4x"></i>
+            </div>
+          
+          
+          </div>
+        </div>
+      </div>
+      <div class="card" id="projectsCard">
+
+        <div class="container">
+         
+          <div class="row forumTop">
+
+           
+
+            <div class="col-md-8">
+
+              <img class="card-img w3-grayscale imgFilter" id="img" src="assets/images/forum.png" alt="Card image">
+            </div>
+            <div class="col-md-4">
+              <div id="recentProj" class="customHeaderSmall">
+                <span id="recent" class="bgPanel">Recent</span> Projects
+              </div>
+              <p id="projText">A forum built to reliably function on the back end and a minimalist front end with user experience in mind. Showcasing an Angular 2 front end, with nodeJS and express powering the back. Data persistence isn't an issue with the tried and true MySQL.</p>
+              <button class="customButton" id="customButton" (click)="openForum()">
+                Open Forum
+              </button>
+            </div>
+            
+          </div>
+          <div class="row mt-2">
+            <div class="col-md-4">
+              <div class="customHeaderSmall">
+                Subcategorization
+              </div>
+              <img class="card-img projImg"src="/assets/images/gamingPosts.png" alt="Card image">
+             
+
+              </div>
+            <div class="col-md-4">
+              <div class="customHeaderSmall">
+                Minimalist Interface
+              </div>
+              <img class="card-img projImg"src="/assets/images/postScreen.png" alt="Card image">
+              
+
+            </div>
+            <div class="col-md-4">
+              <div class="customHeaderSmall">
+                Intuitive Design
+              </div>
+              <img class="card-img projImg" src="/assets/images/createPost.png" alt="Card image">
+             
+
+              </div>
+          </div>
+        </div>
+      </div>
+     
+    </div>
+    </div>
+  <div class="box three" id="boxThree">
+    <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
+      <path d="M0 0 L50 100 L100 0 Z" fill="white" stroke="white"></path>
+    </svg>
+    <div class="container" id="messageForm">
+      <div>
+        <div class="display-4" id="contact">
+          Want to work with me?
+        </div>
+      </div>
+      <form (ngSubmit)="sendMessage()" #f="ngForm" name="form" class="form-styles" id="contactForm">
+        <div class="form-group row" [ngClass]="{ 'has-error': f.submitted && !name.valid }" >
+          <div>
+            <input name="name" ng-minlength="1" [(ngModel)]="model.name" class="form-control" type="text" #name="ngModel" placeholder="Name" id="name" required>
+            <div *ngIf="f.submitted && !name.valid" class="alert alert-danger">Who is sending this message?</div>
+
+          </div>
+        </div>
+        <div class="form-group row" [ngClass]="{ 'has-error': f.submitted && !email.valid }">
+          <div>
+            <input name="email" ng-minlength="1" [(ngModel)]="model.email" class="form-control" type="email" #email="ngModel" placeholder="Email" id="email" required>
+            <div *ngIf="f.submitted && !email.valid" class="alert alert-danger">How can I reach you?</div>
+
+          </div>
+        </div>
+        <div class="form-group row" [ngClass]="{ 'has-error': f.submitted && !message.valid }">
+          <div>
+            <textarea name="message" ng-minlength="1" [(ngModel)]="model.message" class="form-control" type="text" #message="ngModel" rows="5" placeholder="Your message" id="message" required></textarea>
+            <div *ngIf="f.submitted && !message.valid" class="alert alert-danger">What can I help you with?</div>
+
+          </div>
+        </div>
+        <div class="form-group">
+          <button [disabled]="loading" id="contactButton">Send Message</button>
+        </div>
+      </form>
+    </div>
+    
+  </div>
+</body>
