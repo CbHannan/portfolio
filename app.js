@@ -39,6 +39,8 @@ http.createServer(function (req, res) {
         "Content-Length": chunksize,
         "Content-Type": "video/mp4"
       }).listen(process.env.PORT || 5000);
+    })
+  });
 const app = express(); 
 
 var cors = require('cors');
