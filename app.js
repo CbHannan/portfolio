@@ -1,13 +1,10 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 var message = require('./routes/message');
-var fs = require('fs'),
-  http = require('http'),
-  url = require('url'),
-  path = require('path');
-
+var logger = require('morgan');
 var path = require('path');
 var message = require('./routes/message');
+var initFolder = './src/assets/videos';
 
 const app = express(); 
 app.listen(process.env.PORT || 5000);
