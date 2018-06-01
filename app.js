@@ -5,10 +5,8 @@ var logger = require('morgan');
 var path = require('path');
 var message = require('./routes/message');
 
-const app = express(); const port = 8000;
-app.listen(port, () => {
-  console.log('We are live on ' + port);
-});
+const app = express(); 
+app.listen(process.env.PORT || 5000);
 var cors = require('cors');
 
 
