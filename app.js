@@ -7,7 +7,7 @@ var message = require('./routes/message');
 var initFolder = './src/assets/videos';
 
 const app = express(); 
-app(httpListener).listen(process.env.PORT || 5000);
+app.listen(process.env.PORT || 5000);
 var cors = require('cors');
 
 var mimeNames = {
@@ -70,7 +70,7 @@ function getMimeNameFromExt(ext) {
 
   return result;
 }
-
+app.use(httpListener);
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ 'extended': 'false' }));
