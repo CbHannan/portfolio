@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng build && node app.js",
+    "start": "node app.js",
     "postinstall": "ng build --aot -prod",
     "test": "ng test",
     "lint": "ng lint",
