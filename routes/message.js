@@ -30,8 +30,10 @@ router.post('/', function (req, res, next) {
   smtpTransport.sendMail(mailOptions, function (error, response) {
     if (error) {
       res.json(error);
+      console.log("message didnt send");
     } else {
       res.json(response);
+      console.log("message sent");
     }
   });
 

@@ -79,9 +79,12 @@ export class AppComponent {
     });
   }
   clearModel(){
-    this.model.name = '';
-    this.model.email = '';
-    this.model.message = '';
+    this.model.name.setPristine();
+    this.model.name.setUntouched();
+    this.model.email.setPristine();
+    this.model.email.setUntouched();
+    this.model.message.setPristine();
+    this.model.message.setUntouched();
   }
   @HostListener('window:scroll', [])
   checkScroll() {
