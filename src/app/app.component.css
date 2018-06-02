@@ -28,7 +28,7 @@ html, body {
 
 .one {
   min-width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .two {
@@ -221,6 +221,9 @@ app-root:empty + .loading {
 .menu{
   margin-bottom:2rem !important;
 }
+@media(max-width: 1400px){
+  .menu{ font-size: 2rem !important;}
+}
 .textUnderline {
   color: #e0bc75  !important;
 }
@@ -349,6 +352,7 @@ app-root:empty + .loading {
   position:absolute;
   top:0;
   right:0;
+  max-width:65%;
 }
 .staticPosition{
   position:static;
@@ -367,6 +371,9 @@ app-root:empty + .loading {
 #projectsCard{
   min-height:100vh;
   margin-bottom:-5px;
+}
+@media(max-width:1200px){
+  .customHeaderSmall{font-size:30px !important;}
 }
 .auto-height{
   height:auto;
