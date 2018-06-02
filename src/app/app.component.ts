@@ -71,13 +71,18 @@ export class AppComponent {
     this.http.post('/api/message', this.model).subscribe(data => {
       console.log(data);
       console.log("success");
+      this.clearModel();
     }, error => {
         console.log("error");
       
 
     });
   }
-
+  clearModel(){
+    this.model.name = '';
+    this.model.email = '';
+    this.model.message = '';
+  }
   @HostListener('window:scroll', [])
   checkScroll() {
     // var offsets = document.getElementById('projects').getBoundingClientRect();

@@ -34,7 +34,6 @@ router.post('/', function (req, res, next) {
       res.json(response);
     }
   });
-  res.end();
 
  });
 router.get('/', function (req, res, next) {
