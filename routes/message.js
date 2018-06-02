@@ -4,7 +4,9 @@ var bodyParser = require('body-parser');
 var cors = require('cors');
 var nodemailer = require("nodemailer");
 var name, email, message;
- var myEmail = "codybhannan@gmail.com";
+router.use(bodyParser.urlencoded({ extended: true }));
+router.use(bodyParser.json());
+router.use(cors());
 
 var smtpTransport = nodemailer.createTransport({
   service: "Gmail",
@@ -14,18 +16,13 @@ var smtpTransport = nodemailer.createTransport({
   }
  });
  console.log("blahblahblah");
- router.use(bodyParser.urlencoded({ extended: true }));
- router.use(bodyParser.json());
- router.use(cors());
+ 
 router.post('/', function (req, res, next) {
-  name = req.body.name;
-  email = req.body.email;
-  message = req.body.message;
   console.log(req.body.name);
   mailOptions = {
-    to: myEmail,
+    to: "codybhannan@gmail.com",
     subject: "Message sent from your portfolio",
-    html: "Sender: " + name + "<br>" + "Email: " + email + "<br>" + "Message: " + message
+    html: "Sender: " + req.body.name + " <br>" + "Email: " + req.body.email + " <br>" + "Message: " + req.body.message
   }
   smtpTransport.sendMail(mailOptions, function (error, response) {
     if (error) {
