@@ -18,9 +18,11 @@ html, body {
 @media (max-width:1150px){
   #myVideo{
     height:100vh;
-    width:auto !important;
-    min-width:100%;
+    min-width:100% !important;
     overflow:hidden;
+    
+  object-fit: cover;
+
   }
 }
 .infoWrap {
