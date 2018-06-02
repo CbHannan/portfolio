@@ -15,6 +15,14 @@ html, body {
  left:0;
   display: block;
 }
+@media (max-width:1150px){
+  #myVideo{
+    height:100vh;
+    width:auto !important;
+    min-width:100%;
+    overflow:hidden;
+  }
+}
 .infoWrap {
   background-color: #1c2329;
   z-index: 2;
