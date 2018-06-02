@@ -241,7 +241,7 @@ app-root:empty + .loading {
   color: #fe921f;
 }
 #messageForm{
-  margin-top:16rem;
+  margin-top:25vh;
   width:40%;
 }
 .form-group{
