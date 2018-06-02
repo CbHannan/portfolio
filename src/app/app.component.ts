@@ -75,16 +75,14 @@ export class AppComponent {
     }, error => {
         console.log("error");
       
+        this.clearModel();
 
     });
   }
   clearModel(){
-    this.model.name.setPristine();
-    this.model.name.setUntouched();
-    this.model.email.setPristine();
-    this.model.email.setUntouched();
-    this.model.message.setPristine();
-    this.model.message.setUntouched();
+    this.model.name = ' ';
+    this.model.email = ' ';
+    this.model.message = ' ';
   }
   @HostListener('window:scroll', [])
   checkScroll() {
