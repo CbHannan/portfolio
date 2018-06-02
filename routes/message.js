@@ -11,8 +11,8 @@ router.use(cors());
 var smtpTransport = nodemailer.createTransport({
   service: "Gmail",
   auth: {
-    user: "Savannah.Forum@gmail.com",
-    pass: "Crossings"
+    user: "codyhannanportfolio@gmail.com",
+    pass: "portfolio92"
   }
  });
  console.log("blahblahblah");

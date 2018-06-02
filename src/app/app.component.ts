@@ -75,8 +75,6 @@ export class AppComponent {
     }, error => {
         console.log("error");
       
-        this.clearModel();
-
     });
   }
   clearModel(){
