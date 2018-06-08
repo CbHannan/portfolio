@@ -4,7 +4,17 @@ html, body {
   z-index: 0;
 }
 
-
+#myVideo {
+  z-index: -1;
+  width: 100%;
+  height: auto;
+  margin-left: 0;
+  margin-right: 0;
+ position:fixed;
+ top:0;
+ left:0;
+  display: block;
+}
 @media (max-width:1150px){
   #myVideo{
     height:100vh;
