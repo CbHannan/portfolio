@@ -1,4 +1,4 @@
-import { Component, HostListener, ElementRef } from '@angular/core';
+import { Component, HostListener, ElementRef, OnInit } from '@angular/core';
 import { Http, Headers, RequestOptions, Response } from '@angular/http';
 
 @Component({
@@ -14,7 +14,10 @@ export class AppComponent {
   constructor(public el: ElementRef, private http: Http) {
 
   }
+  ngOnInit() {
+    document.getElementById('myVideo')[0].play();
 
+  }
   scrollToContact() {
     var contact = document.getElementById('boxThree');
     contact.scrollIntoView({
