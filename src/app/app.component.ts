@@ -17,7 +17,13 @@ export class AppComponent {
   ngOnInit() {
     let audioPlayer = <HTMLVideoElement>document.getElementById('myVideo');
 
-    audioPlayer.play(); 
+
+    var isPlaying = audioPlayer.currentTime > 0 && !audioPlayer.paused && !audioPlayer.ended
+      && audioPlayer.readyState > 2;
+
+    if (!isPlaying) {
+      audioPlayer.play();
+    }
   }
   scrollToContact() {
     var contact = document.getElementById('boxThree');
