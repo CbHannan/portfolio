@@ -10,7 +10,22 @@
 
         <source src="/assets/videos/bg.webm" type="video/webm" />
       </video>
-     
+     <script>
+       // Show loading animation.
+    var video = document.getElementById('myVideo')
+  var playPromise = video.play();
+
+  if (playPromise !== undefined) {
+    playPromise.then(_ => {
+      // Automatic playback started!
+      // Show playing UI.
+    })
+    .catch(error => {
+      // Auto-play was prevented
+      // Show paused UI.
+    });
+  }
+</script>
     
     </div>
     <div>
