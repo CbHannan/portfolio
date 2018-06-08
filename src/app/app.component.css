@@ -4,13 +4,7 @@ html, body {
   z-index: 0;
 }
 
-#myVideo {
-  width: 100%;
-  height: auto;
-  margin-left: 0;
-  margin-right: 0;
- 
-}
+
 @media (max-width:1150px){
   #myVideo{
     height:100vh;
