@@ -17,10 +17,11 @@ export class AppComponent {
   ngOnInit() {
     let audioPlayer = <HTMLVideoElement>document.getElementById('myVideo');
 
-    audioPlayer.play();
+    audioPlayer.muted = true;
 
    
   }
+  
   scrollToContact() {
     var contact = document.getElementById('boxThree');
     contact.scrollIntoView({
