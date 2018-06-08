@@ -14,9 +14,29 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
   <script defer src="https://use.fontawesome.com/releases/v5.0.11/js/all.js" integrity="sha384-ImVoB8Er8knetgQakxuBS4G3RSkyD8IZVVQCAnmRJrDwqJFYUE4YOv+DbIofcO9C" crossorigin="anonymous"></script>
-
+  <style>
+    #myVideo {
+      z-index: -1;
+      width: 100%;
+      height: auto;
+      margin-left: 0;
+      margin-right: 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: block;
+    }
+  </style>
 </head>
 <body>
+  <div class="vidWrap">
+    <video autoplay muted loop id="myVideo">
+      <source src="/assets/videos/bg.webm" type="video/webm" />
+      <source src="/assets/videos/bg.mp4" type="video/mp4">
+    </video>
+
+
+  </div>
   <app-root></app-root>
 </body>
 </html>
