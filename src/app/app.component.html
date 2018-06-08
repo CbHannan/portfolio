@@ -12,8 +12,7 @@
       </video>
      <script>
        // Show loading animation.
-    var video = document.getElementById('myVideo')
-  var playPromise = video.play();
+       var playPromise = document.getElementById('myVideo').play();
 
   if (playPromise !== undefined) {
     playPromise.then(_ => {
